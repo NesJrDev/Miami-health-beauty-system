@@ -13,8 +13,7 @@ const CreateAppo = ({showContainer}) => {
     timeForAppo: "",
     takenOrNext: 'next',
     userImage: '',
-  })
-  const [appoCon, setAppoCon] = useState(false)
+  });
 
   const trapUserData = async (user) => {
     if (user) {
@@ -54,7 +53,6 @@ const CreateAppo = ({showContainer}) => {
           setDataAppo({...getDataAppo, userImage: userDetails.userImage});
           console.log("Appointment added successfully!");
           showContainer()
-          setAppoCon(true)
         } catch (error) {
           console.error("Error adding appointment: ", error);
         }
@@ -73,8 +71,8 @@ const CreateAppo = ({showContainer}) => {
           {userDetails !== null ? ( 
           <>
           <h1>Create Appointment Lol</h1>
-            <input type="text" name="userNameAppo" onChange={setDataInArr}/>
-            <input type="text" name='userEmailAppo' onChange={setDataInArr}/>
+            <input type="text" name="userNameAppo" placeholder='Name' onChange={setDataInArr}/>
+            <input type="text" name='userEmailAppo' placeholder='Email' onChange={setDataInArr}/>
             <input type="number" name="userNumberAppo" id="user_number" placeholder='Number' onChange={setDataInArr}/>
             <input type="date" name="dataForAppo" id="user_date_appo" onChange={setDataInArr} />
             <input type="time" name="timeForAppo" id="user_date_time" onChange={setDataInArr} />

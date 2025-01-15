@@ -41,6 +41,12 @@
   border-radius: 5px;
 }
 
+.allUsers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .allUserAppoiments {
   width: 100%;
   display: flex;
@@ -78,7 +84,7 @@
   margin: 3px 0;
 }
 .buttonOfCancellAppo {
-  width: 100px;
+  width: auto;
   height: 30px;
   background-color: red;
   color: white;
@@ -87,4 +93,217 @@
   cursor: pointer;
   border-radius: 5px;
   margin-top: 10px;
+}
+.containerNoAdmin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Hace que ocupe toda la altura de la ventana */
+  background-color: #f5f5f5; /* Fondo suave */
+}
+
+.containerOfNoAdmin {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 500px; /* Ancho máximo del contenedor interno */
+  width: 100%;
+}
+
+.pictureProfile {
+  width: 150px; /* Tamaño de la imagen de perfil */
+  height: 150px;
+  border-radius: 50%; /* Hace la imagen circular */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien */
+  margin-bottom: 20px;
+}
+
+.titleNoAdmin {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.buttonomepage {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonomepage:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+
+/* Programmer area */
+
+.containerProgrammerInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding-top: 120px;
+}
+
+.containerInfoProgrammer {
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.containerInfoProgrammer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.containerInfoProgrammer h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.containerInfoProgrammer p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.containerInfoProgrammer div {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.containerInfoProgrammer div:hover {
+  background-color: #d33;
+}
+
+.allUsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.usersInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.userInfoAdmin {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userInfoAdmin img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.userInfoAdmin h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.userInfoAdmin p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.userInfoAdmin p:last-child {
+  font-weight: bold;
+  color: #333;
+}
+
+/* create account area un programmer area lol */
+
+.containerForCreateAccount {
+  width: 100%;
+  height: 100vh; /* Hace que ocupe toda la altura de la ventana */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  background-color: #f4f4f4; /* Color de fondo, puedes cambiarlo */
+  position: fixed;
+  top: 0;
+}
+
+.emailFormCreate {
+  width: 400px; /* Ancho del formulario, ajusta según sea necesario */
+  padding: 20px;
+  background-color: #fff; /* Fondo blanco para el formulario */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+  display: flex;
+  flex-direction: column; /* Alineación de los inputs en columna */
+  gap: 15px; /* Espacio entre los inputs */
+}
+.closeContainerForCreateAccount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  background: rgb(221, 78, 78);
+  color: white;
+  padding: 15px;
+}
+
+/* Buttons */
+.userFilterInfo {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+.setByName , .setByEmail {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.setByName:hover, .setByEmail:hover {
+  background-color: #d33;
+}
+.setByName:target, .setByEmail:target {
+  background-color: #d33;
 }

@@ -6,6 +6,8 @@ import appUser from '../../images/profile/app_user.png'
 import '../styles-of-components/profileIcon.css'
 import { LogOutF } from './registration-login/LogOutF'
 import { useNavigate } from 'react-router-dom'
+import adminPhoto from '../../images/profile/admin-icon.svg'
+import devPhoto from '../../images/profile/developer_6478099.png'
 
 export const IconProfile = () => {
   
@@ -69,10 +71,29 @@ export const IconProfile = () => {
                     <img src={appUser} alt="appointments" />
                     <p>Appointments</p>
                 </div>
+                {userDetails.isAdmin && (
+                  <>
+                  <div className="appointmentsUser" onClick={()=> navigateF("/adminPanel")}>
+                   <img src={adminPhoto} alt="appointments" />
+                   <p>Admin</p>
+                </div>
+                  </>
+                )}
+                {userDetails.isAdmin == "developer" ? (
+                <>
+                  <div className="appointmentsUser" onClick={()=> navigateF("/programator-area")}>
+                    <img src={devPhoto} alt="Developer-area" />
+                    <p style={{color: 'red'}}>Developer</p>
+                  </div>
+                </>  
+                ) : (
+                  <>
+                  </>
+                )}
                 <LogOutF />
                 </>
               ) : (
-                <p>Loading...</p>
+                <p>Loading... {valueButton}?</p>
               )}
             </div>
           </div>

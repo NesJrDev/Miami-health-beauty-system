@@ -34,6 +34,7 @@ const RegisterFGoogle = () => {
             userName: result.user.displayName,
             userEmail: result.user.email,
             userPhoto: result.user.photoURL,
+            isAdmin: false,
           })
           console.log("User registered successfully!")
           navigateAfSignin('/')

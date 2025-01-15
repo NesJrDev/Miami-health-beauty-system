@@ -2,6 +2,7 @@
   "name": "mhb-system-github",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nesjrdev.github.io/Website-system/",
   "dependencies": {
     "cra-template": "1.2.0",
     "firebase": "^11.1.0",
@@ -14,6 +15,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -36,5 +39,16 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NesJrDev/Website-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NesJrDev/Website-system/issues"
   }
 }

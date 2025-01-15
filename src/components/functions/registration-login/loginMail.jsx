@@ -10,9 +10,7 @@ export const LoginMail = () => {
   const [msj, setMsj] = useState('')
 
   const [name, setName] = useState('')
-  const [Lname, setLName] = useState('')
   const [email, setEmail] = useState('')
-  const [number, setNumber] = useState('')
   const [password, setPassword] = useState('')
 
   const mailRegister = async (e) => {
@@ -30,6 +28,7 @@ export const LoginMail = () => {
         setMsj('Incorrect password');
       } else {
         setMsj('Something went wrong. Please try again.');
+        console.log(name)
       }
     }
 }

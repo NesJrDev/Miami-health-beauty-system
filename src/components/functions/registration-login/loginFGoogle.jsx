@@ -3,7 +3,7 @@ import googleLogo from '../../styles-of-components/vecteezy_google-logo-on-trans
 import { GoogleAuthProvider } from 'firebase/auth'
 import { signInWithPopup } from 'firebase/auth'
 import { auth, db } from '../../../firebase'
-import { collection, doc, getDoc, getDocs, query, where } from 'firebase/firestore'
+import { doc, getDoc } from 'firebase/firestore'
 import { useNavigate } from 'react-router-dom'
 import '../../styles-of-components/loginCss.css'
 import { LoginMail } from './loginMail'
@@ -12,15 +12,6 @@ export const LoginF = () => {
   
   const [msj, setMsj] = useState('')
   const navigateAfSignin = useNavigate()
-
-  const checkIfMailExist = async (emailUser) => {
-    const usersRef = collection(db, "Users")
-    const q = query(usersRef, where("userEmail", "==", emailUser))
-    const querySnapshot = await getDocs(q)
-
-    // If querySnapshot is empty return that the func dosnt found a user with that email
-    return !querySnapshot.empty
-  }
 
   const loginWithGoogle = async (e) => {
     try {
