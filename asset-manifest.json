@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Miami-health-beauty-system/static/css/main.fae064b4.css",
+    "main.js": "/Miami-health-beauty-system/static/js/main.57a63a72.js",
+    "static/js/488.6a78ffc9.chunk.js": "/Miami-health-beauty-system/static/js/488.6a78ffc9.chunk.js",
+    "static/media/app_user.png": "/Miami-health-beauty-system/static/media/app_user.75ecfa8be6d6b5718df5.png",
+    "static/media/google-logo.jpg": "/Miami-health-beauty-system/static/media/google-logo.d145e7cb786dee4a75cf.jpg",
+    "static/media/developer_6478099.png": "/Miami-health-beauty-system/static/media/developer_6478099.cc69d18aa735f78db688.png",
+    "static/media/blank-profile-picture-973460_640.png": "/Miami-health-beauty-system/static/media/blank-profile-picture-973460_640.afe07f57979e2bba2183.png",
+    "static/media/admin-icon.svg": "/Miami-health-beauty-system/static/media/admin-icon.8ca7f30668ea2fb8197c4f9857df2c29.svg",
+    "index.html": "/Miami-health-beauty-system/index.html",
+    "main.fae064b4.css.map": "/Miami-health-beauty-system/static/css/main.fae064b4.css.map",
+    "main.57a63a72.js.map": "/Miami-health-beauty-system/static/js/main.57a63a72.js.map",
+    "488.6a78ffc9.chunk.js.map": "/Miami-health-beauty-system/static/js/488.6a78ffc9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fae064b4.css",
+    "static/js/main.57a63a72.js"
+  ]
+}
